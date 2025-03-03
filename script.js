@@ -1,5 +1,6 @@
 const otpfield = document.getElementById("otp");
 const btn = document.getElementById("btn");
+const copy = document.getElementById("copy");
 
 function getOTP() {
     let otp = "";
@@ -12,4 +13,8 @@ function getOTP() {
 btn.addEventListener('click', () => {
     let otp = getOTP();
     otpfield.value = otp;
+});
+
+copy.addEventListener('click', () => {
+    navigator.clipboard.writeText(otpfield.value);
 })
