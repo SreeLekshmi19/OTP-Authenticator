@@ -1,42 +1,83 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
-body{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-.container{
-    height: 100vh;
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
-.content {
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 300px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 8px;
+    background: #fff;
 }
-input{
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
+
+#otp {
+    border: none;
     outline: none;
-}
-button{
-    margin-top: 10px;
+    font-size: 16px;
+    flex: 1;
     padding: 5px;
-    padding-inline: 15px;
-    border-radius: 10px;
-    border: 1px solid black;
-    cursor: pointer;
 }
-i{
+
+button {
     cursor: pointer;
-}
-.msgContainer{
-    display: none;
-    text-align: center;
-    width: 30%;
-    position: fixed;
-    bottom: 0;
-    background-color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #007bff;
     color: white;
-    border-radius: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#copy {
+    background: transparent;
+    color: #007bff;
+    font-size: 18px;
+}
+
+#copy:hover {
+    color: #0056b3;
+}
+
+#msgContainer { 
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    width: 23%;
+    position: fixed;
+    color: white;
     margin-bottom: 10px;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+#msg{
+    margin-top: 10px;
 }

@@ -2,7 +2,7 @@ const otpfield = document.getElementById("otp");
 const btn = document.getElementById("btn");
 const copy = document.getElementById("copy");
 const msg = document.getElementById("msg");
-const msgContainer = document.getElementsByClassName("msgContainer");
+const msgContainer = document.getElementById("msgContainer");
 
 function getOTP() {
     let otp = "";
