@@ -29,3 +29,14 @@ button{
 i{
     cursor: pointer;
 }
+.msgContainer{
+    display: none;
+    text-align: center;
+    width: 30%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
